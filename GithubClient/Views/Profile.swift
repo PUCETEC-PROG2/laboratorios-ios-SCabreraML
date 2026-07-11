@@ -10,11 +10,23 @@ import SwiftUI
 struct Profile: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Perfil de usuario")
+            VStack (alignment: .leading) {
+                Text("Sebastián Cabrera")
+                    .font(.title)
+                
+                Image(uiImage: .githubLogo)
+                    .resizable()
+                    .scaledToFit()
+                    
+                
+                Text("SCabreraML")
+                    .font(.headline)
+                    .padding(.vertical)
+                
+                Text("Desarrollo de Software")
             }
-            .navigationTitle("Perfil de usuario")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Perfil")
+            .padding()
         }
     }
 }
