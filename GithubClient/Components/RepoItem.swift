@@ -21,9 +21,10 @@ struct RepoItem: View {
                     .scaledToFill()
             }
             .frame(width: 80, height: 80)
+            .padding(.trailing, 8)
             
             
-            Spacer()
+   
             VStack (alignment: .leading){
                 Text(repository.name)
                     .font(.title2)
