@@ -39,7 +39,7 @@ struct RepoForm: View {
                     
                     HStack{
                         Button(action: {
-                            print("Boton presionado")
+                            selectTab = 0
                         }){
                             Label("Cancelar",systemImage:
                                     "xmark.circle")
